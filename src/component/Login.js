@@ -51,7 +51,7 @@ class Login extends Component {
         <Col md={6}>
           <Jumbotron>
             <Container style={{ padding: "10px", paddingLeft: "220px" }}>
-              <img src="diuIcon.png" height="120px" />
+              <img src="/diuIcon.png" height="120px" alt="login logo" />
             </Container>
             <Form onSubmit={this.onSubmitHandler}>
               <Form.Group as={Row}>

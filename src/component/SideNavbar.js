@@ -52,7 +52,7 @@ class SideNavbar extends Component {
         }}
       >
         <Container style={{ padding: "5px" }}>
-          <img src='DIUBNR.png' height="75px" />
+          <img src='/DIUBNR.png' height="75px" alt="sidebar logo" />
         </Container>
         <br />
         <Nav.Link href="/schedule">

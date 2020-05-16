@@ -80,7 +80,7 @@ class App extends Component {
               jwtToken && (
                 <Row>
                   <Col md={6} style={{ padding: "5px", paddingLeft: "15px" }}>
-                    <img src="diubnr.jpg" height="40px" />
+                    <img src="/diubnr.jpg" height="40px" alt="banar" />
                   </Col>
                 </Row>
               )
