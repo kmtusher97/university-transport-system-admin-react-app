@@ -37,8 +37,6 @@ import setJWTTokenToHeader from './security/setJWTTokenToHeader';
 import { SET_CURRENT_USER } from './actions/types';
 import { logout } from './actions/SecurityActions';
 import SecureRoute from './security/SecureRoute';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBusAlt } from '@fortawesome/free-solid-svg-icons';
 
 const jwtToken = localStorage.jwtToken;
 
@@ -80,14 +78,10 @@ class App extends Component {
           >
             {
               jwtToken && (
-                <Row style={{ height: "50px" }}>
-                  <Col md={6}>
-                    <h2>
-                      <FontAwesomeIcon icon={faBusAlt} />
-                      {" | University Bus System"}
-                    </h2>
+                <Row>
+                  <Col md={6} style={{ padding: "5px", paddingLeft: "15px" }}>
+                    <img src="diubnr.jpg" height="40px" />
                   </Col>
-                  <Col md={6}></Col>
                 </Row>
               )
             }

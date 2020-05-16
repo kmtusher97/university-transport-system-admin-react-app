@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Row, Col, Button, Jumbotron } from 'react-bootstrap';
+import { Form, Row, Col, Button, Jumbotron, Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { login } from '../actions/SecurityActions';
@@ -50,6 +50,9 @@ class Login extends Component {
         <Col md={3}></Col>
         <Col md={6}>
           <Jumbotron>
+            <Container style={{ padding: "10px", paddingLeft: "220px" }}>
+              <img src="diuIcon.png" height="120px" />
+            </Container>
             <Form onSubmit={this.onSubmitHandler}>
               <Form.Group as={Row}>
                 <Form.Label column sm={2}>Email</Form.Label>

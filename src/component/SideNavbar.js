@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Nav, Button } from "react-bootstrap";
+import { Nav, Button, Container } from "react-bootstrap";
 import { logout } from "../actions/SecurityActions";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -51,6 +51,10 @@ class SideNavbar extends Component {
           fontWeight: "500"
         }}
       >
+        <Container style={{ padding: "5px" }}>
+          <img src='DIUBNR.png' height="75px" />
+        </Container>
+        <br />
         <Nav.Link href="/schedule">
           <FontAwesomeIcon icon={faCalendarCheck} />
           {" Schedule"}
